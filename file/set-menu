@@ -42,9 +42,8 @@ echo -e " Server Xray Status:" $status_server
 echo -e "\e[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
 echo -e " [${grenbo}1${NC}] ${RED}• ${NC}GANTI DOMAIN $NC$gray$NC"
 echo -e " [${grenbo}2${NC}] ${RED}• ${NC}PERBARUI CERT $NC$gray$NC"
-echo -e " [${grenbo}3${NC}] ${RED}• ${NC}BACKUP $NC$gray$NC"
-echo -e " [${grenbo}4${NC}] ${RED}• ${NC}RESTORE $NC$gray$NC"
-echo -e " [${grenbo}5${NC}] ${RED}• ${NC}KEMBALI $NC$gray$NC"
+echo -e " [${grenbo}3${NC}] ${RED}• ${NC}BACKUP/RESTORE $NC$gray$NC"
+echo -e " [${grenbo}4${NC}] ${RED}• ${NC}KEMBALI $NC$gray$NC"
 echo -e "\e[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\e[0m"
 read -p "Select From Options : " menu
 case $menu in
@@ -53,15 +52,11 @@ case $menu in
     ;;
     2)
         cert
-        
-            ;;
-    2)
-        Backup
-            ;;
-    2)
-        Restore
-    ;;
+      ;;
     3)
+      Get-Back.sh
+      ;;
+    4)
         menu
     ;;
 esac
