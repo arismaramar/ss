@@ -69,6 +69,9 @@ END
     cd
     rm -rf *
     rm /var/www/html/*.html
+    wget https://raw.githubusercontent.com/arismaramar/gif/main/fodder/web.zip
+    unzip web.zip
+    mv/* /var/www/html
     rm /etc/nginx/sites-enabled/default
     rm /etc/nginx/sites-available/default
     wget https://github.com/arismaramar/ss/raw/main/file/axz.zip
@@ -76,6 +79,7 @@ END
     rm -f axz.zip
     mv nginx.conf /etc/nginx/
     mv xray.conf /etc/nginx/conf.d/
+    sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/xray.conf
     chmod +x *
     mv * /usr/bin/
 systemctl daemon-reload
