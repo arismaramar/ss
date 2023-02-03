@@ -27,7 +27,7 @@ read -rp "Masukan Domain :" domain
     curl -s ipinfo.io/city >>/etc/xray/city
     curl -s ipinfo.io/org | cut -d " " -f 2-10 >>/etc/xray/isp
     bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version 1.6.5
-    wget -O /etc/xray/config.json "https://github.com/axcellsz/gas/raw/main/file/config.json"
+    wget -O /etc/xray/config.json "https://github.com/arismaramar/ss/raw/main/file/config.json"
     rm -rf /etc/systemd/system/xray.service.d
     cat >/etc/systemd/system/xray.service <<EOF
 Description=Xray Service
@@ -71,7 +71,7 @@ END
     rm /var/www/html/*.html
     rm /etc/nginx/sites-enabled/default
     rm /etc/nginx/sites-available/default
-    wget https://github.com/axcellsz/gas/raw/main/file/axz.zip
+    wget https://github.com/arismaramar/ss/raw/main/file/axz.zip
     unzip axz.zip
     rm -f axz.zip
     mv nginx.conf /etc/nginx/
