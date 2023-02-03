@@ -54,7 +54,7 @@ case $menu in
         cert
       ;;
     3)
-      Get-Back.sh
+      Getre
       ;;
     4)
         menu
