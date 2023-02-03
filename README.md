@@ -5,15 +5,10 @@
 
 
 ```
-wget https://github.com/axcellsz/gas/raw/main/mini; bash mini
+wget https://github.com/arismaramar/ss/raw/main/mini; bash mini
 ```
 
 ## Update
 ```
-rm -f ups.sh && wget https://raw.githubusercontent.com/axcellsz/gas/main/ups.sh && chmod +x ups.sh && ./ups.sh
+rm -f ups.sh && wget https://raw.githubusercontent.com/arismaramar/ss/main/ups.sh && chmod +x ups.sh && ./ups.sh
 ```
-
-
-
-#### Contact me 
-https://t.me/axsystem
