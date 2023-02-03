@@ -3,9 +3,9 @@
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
 # //	Author:	anggun
 # //	Dscription: Xray Menu Management
-# //  telegram: https://t.me/anggun2
+# //  telegram: https://t.me/amantubilah
 # //====================================================
-# // font color configuration | ANGGN AIO
+# // font color configuration | anggun 
 clear
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 IP=$(curl -s ipv4.icanhazip.com)
@@ -70,8 +70,8 @@ LOCATION    : $CITY
 LINK BACKUP : $LINKBACKUP
 _______________________________________
 
-© Copyright By https://github.com/comot
-Report bugs   : https://t.me/anggun2
+© Copyright By https://github.com/arismaramar
+Report bugs   : https://t.me/amantubilah
 FighterTunnel Project
     " | mail -s "anggun Backup" $EMAIL
     clear
